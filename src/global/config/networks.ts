@@ -39,6 +39,13 @@ export interface CantoNetwork extends Network {
   cosmosAPIEndpoint: string;
   cosmosChainId: string;
 }
+
+export interface AltheaNetwork extends Network {
+  
+  cosmosBlockExplorerUrl: string;
+  cosmosAPIEndpoint: string;
+  cosmosChainId: string;
+}
 //only used for bridging. Only bridge supported networks will be labeled as ETHBridgeNetwork
 export interface ETHBridgeNetwork extends Network {
   coreContracts: {
@@ -76,6 +83,34 @@ export const CantoMainnet: CantoNetwork = {
   cosmosAPIEndpoint: "https://mainnode.plexnode.org:1317",
   cosmosChainId: "canto_7700-1",
 };
+
+export const AltheaTestnet: AltheaNetwork = {
+  name: "Althea",
+  chainName: "Althea",
+  nativeCurrency: {
+    name: "Althea",
+    symbol: "Althea",
+    decimals: 18,
+  },
+  icon: cantoIcon,
+  chainId: 417834,
+  rpcUrl: "https://althea.zone:443",
+  isTestChain: false,
+  isLocalChain: false,
+  multicallAddress: "0x210b88d5Ad4BEbc8FAC4383cC7F84Cd4F03d18c6",
+  multicall2Address: "0x637490E68AA50Ea810688a52D7464E10c25A77c1",
+  blockExplorerUrl: cantoBlockExplorerUrl,
+  getExplorerAddressLink: getAddressLink(cantoBlockExplorerUrl),
+  getExplorerTransactionLink: getTransactionLink(cantoBlockExplorerUrl),
+  //canto specific
+  //coreContracts: CORE_ADDRESSES.CantoMainnet,
+  cosmosBlockExplorerUrl: "https://www.mintscan.io/canto",
+  cosmosAPIEndpoint: "https://mainnode.plexnode.org:1317",
+  cosmosChainId: "althea_417834-2",
+};
+
+
+
 export const ETHMainnet: ETHBridgeNetwork = {
   ...Mainnet,
   name: "Ethereum",

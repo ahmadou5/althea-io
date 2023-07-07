@@ -1,12 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;700&display=swap");
+//@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;700&display=swap");
+
+//@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
 
 @font-face {
-  font-family: "ModeSeven";
-  src: local("ModeSeven"), url("./fonts/modeseven.ttf") format("truetype");
+  font-family: "Orbitron";
+  //src: local("ModeSeven"), url("./fonts/modeseven.ttf") format("truetype");
   font-weight: bold;
 }
 :root {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Orbitron", monospace;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -18,7 +22,7 @@
   -webkit-text-size-adjust: 100%;
 }
 * {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Orbitron", monospace;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -30,11 +34,11 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #45d066;
+  color: #0066ff;
 }
 
 body {
-  background-color: #111;
+  background-color: #ffebeb;
   display: flex;
   min-width: 320px;
   min-height: 100vh;

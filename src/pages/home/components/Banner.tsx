@@ -1,14 +1,14 @@
 import styled from "@emotion/styled";
 import { OutlinedButton, Text } from "global/packages/src";
-import bannerImg from "assets/coh-banner.png";
+import bannerImg from "assets/alth1.png";
 export const Banner = () => {
   return (
     <Styled>
       <Text type="title" size="title2" align="left">
-        The canto online hackathon
+        The World's First iFi Hackathon
       </Text>
       <Text align="left">/chapter 1 : season 8</Text>
-      <Text align="left">/june 19 - july 21</Text>
+      <Text align="left">/july 1 - august 30</Text>
       <Text align="left">
         Join the Canto Online Hackathon for apps, infrastructure, and original
         work.
@@ -16,7 +16,7 @@ export const Banner = () => {
       <div className="spacer"></div>
       <OutlinedButton
         onClick={() => {
-          window.open("https://thecoh.build/");
+          window.open("https://https://dorahacks.io/hackathon/althea-ifi-hackathon.build/");
         }}
       >
         Apply to hack &gt;
@@ -30,7 +30,7 @@ const Styled = styled.div`
   height: 500px;
   border-radius: 4px;
   padding: 1rem;
-  border: 1px solid #06fc99b8;
+  border: 1px solid #0066ff;
   display: flex;
   flex-direction: column;
   gap: 1rem;

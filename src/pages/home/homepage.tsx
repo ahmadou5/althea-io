@@ -4,15 +4,15 @@ import { pageList } from "global/config/pageList";
 import { Text } from "global/packages/src";
 import { Mixpanel } from "mixpanel";
 import { NavLink } from "react-router-dom";
-import bg from "assets/bg.jpg";
+import bg from "assets/alth1.png";
 import { Banner } from "./components/Banner";
 
 const Homepage = () => {
   return (
     <>
       <HelmetSEO
-        title="Canto - Home Page"
-        description="Canto Homepage serves De-fi applications"
+        title="Althea - Home Page"
+        description="Althea Layer one Interactive User Interface Explore the althea Blockchain With us"
         link=""
       />
       <Styled>
@@ -40,7 +40,7 @@ const Homepage = () => {
           })}
         </ul>
         <div className="right">
-          <Banner />
+        <Banner />
         </div>
         {/* <div className="bg"> </div> */}
       </Styled>
@@ -128,12 +128,7 @@ const Styled = styled.div`
       padding-left: 1rem;
 
       color: black;
-      background-image: linear-gradient(
-        to right,
-        #06fc99 0%,
-        #06fc99 40%,
-        #06fc99 100%
-      );
+      background-color: #0066ff ;
       background-repeat: no-repeat;
       background-size: 200% 100%;
       transition: background-size 0.7s, background-color 0.7s;
