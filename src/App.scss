@@ -58,17 +58,17 @@ input[type="number"] {
 }
 
 ::selection {
-  color: black;
+  color: rgb(247, 247, 247);
   background: var(--primary-color);
 }
 
 .App {
   background: repeating-linear-gradient(
     0deg,
-    #151515 0%,
-    #151515 4px,
-    #141a18 4px,
-    #141a18 8px
+    #d3d1d1 0%,
+    #e2dfdf 4px,
+    #ebe2e2 4px,
+    #141a18 0px
   );
   background-repeat: repeat-y;
   display: flex;

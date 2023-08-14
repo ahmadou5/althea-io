@@ -1,10 +1,11 @@
+
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import menuImg from "assets/icons/menu.svg";
 import closeImg from "assets/icons/close.svg";
 import ImageButton from "global/components/ImageButton";
 import { useState } from "react";
 import styled from "@emotion/styled";
-import cantoFullImg from "assets/logo-full.svg";
+import cantoFullImg from "assets/logo.svg";
 import { Link } from "react-router-dom";
 import { OutlinedButton } from "../atoms/Button";
 import { addCantoToKeplr } from "../../utils/walletFunctionality";

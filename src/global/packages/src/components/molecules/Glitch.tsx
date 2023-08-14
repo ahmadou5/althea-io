@@ -31,32 +31,32 @@ const GlitchWrapper = styled.p`
   }
   @keyframes glitch {
     0% {
-      text-shadow: 0.05em 0 0 #00ffd5, -0.03em -0.04em 0 #1d7407,
-        0.025em 0.04em 0 #8bff9f;
+      text-shadow: 0.05em 0 0 #0077ff, -0.03em -0.04em 0 #0077ff,
+        0.025em 0.04em 0 #0077ff;
     }
     15% {
-      text-shadow: 0.05em 0 0 #00ffd5, -0.03em -0.04em 0 #1d7407,
-        0.025em 0.04em 0 #8bff9f;
+      text-shadow: 0.05em 0 0 #0077ff, -0.03em -0.04em 0 #0077ff,
+        0.025em 0.04em 0 #0066ff;
     }
     16% {
-      text-shadow: -0.05em -0.025em 0 #00ffd5, 0.025em 0.035em 0 #1d7407,
-        -0.05em -0.05em 0 #8bff9f;
+      text-shadow: -0.05em -0.025em 0 #0077ff, 0.025em 0.035em 0 #0077ff,
+        -0.05em -0.05em 0 #0066ff;
     }
     49% {
-      text-shadow: -0.05em -0.025em 0 #00ffd5, 0.025em 0.035em 0 #1d7407,
-        -0.05em -0.05em 0 #8bff9f;
+      text-shadow: -0.05em -0.025em 0 #0077ff, 0.025em 0.035em 0 #0077ff,
+        -0.05em -0.05em 0 #0066ff;
     }
     50% {
-      text-shadow: 0.05em 0.035em 0 #00ffd5, 0.03em 0 0 #1d7407,
-        0 -0.04em 0 #8bff9f;
+      text-shadow: 0.05em 0.035em 0 #0077ff, 0.03em 0 0 #0077ff,
+        0 -0.04em 0 #0066ff;
     }
     99% {
-      text-shadow: 0.05em 0.035em 0 #00ffd5, 0.03em 0 0 #1d7407,
-        0 -0.04em 0 #8bff9f;
+      text-shadow: 0.05em 0.035em 0 #0077ff, 0.03em 0 0 #0077ff,
+        0 -0.04em 0 #0066ff;
     }
     100% {
-      text-shadow: -0.05em 0 0 #00ffd5, -0.025em -0.04em 0 #1d7407,
-        -0.04em -0.025em 0 #8bff9f;
+      text-shadow: -0.05em 0 0 #0077ff, -0.025em -0.04em 0 #0077ff,
+        -0.04em -0.025em 0 #0066ff;
     }
   }
 `;

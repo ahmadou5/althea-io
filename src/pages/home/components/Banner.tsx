@@ -39,9 +39,9 @@ const Styled = styled.div`
   .spacer {
     flex-grow: 1;
   }
-  transition: transform 0.2s;
+  transition: transform 0.4s;
   &:hover {
-    transform: scale(1.02);
+    transform: scale(1.08);
   }
 
   @media (max-width: 1000px) {

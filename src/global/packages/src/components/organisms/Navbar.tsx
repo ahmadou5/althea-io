@@ -50,7 +50,7 @@ export const NavBar = (props: Props) => {
                 transform: "translateY(-2px)",
               }}
             >
-              <Glitch title={"canto"} />
+              <Glitch title={"Althea"} />
             </div>
           </a>
         </div>

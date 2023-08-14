@@ -76,7 +76,7 @@ const Styled = styled.div`
     background-color: black;
     background: url(${bg}),
       linear-gradient(90deg, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 60%),
-      linear-gradient(180deg, #06fc99 0%, #06fc99 50%, rgba(0, 0, 0, 1) 100%);
+      linear-gradient(180deg, #0066FF 0%, #0066FF 50%, rgba(0, 0, 0, 1) 100%);
     background-position: 100%;
     background-size: auto 100%;
     top: 0;
@@ -127,7 +127,7 @@ const Styled = styled.div`
     &:hover {
       padding-left: 1rem;
 
-      color: black;
+      color: wheat;
       background-color: #0066ff ;
       background-repeat: no-repeat;
       background-size: 200% 100%;
