@@ -17,6 +17,9 @@ const cantoBlockExplorerUrl = "https://tuber.build";
 const cantoTestBlockExplorerUrl = "https://testnet.tuber.build";
 const emptyBlockExplorerLink = "https://www.nothing.com";
 
+const altheaBlockExplorerUrl = "https://tuber.build";
+const altheaTestBlockExplorerUrl = "https://testnet.tuber.build";
+
 const getAddressLink = (explorerUrl: string) => (address: string) =>
   `${explorerUrl}/address/${address}`;
 const getTransactionLink = (explorerUrl: string) => (txnId: string) =>
@@ -73,7 +76,7 @@ export const CantoMainnet: CantoNetwork = {
   isTestChain: false,
   isLocalChain: false,
   multicallAddress: "0x210b88d5Ad4BEbc8FAC4383cC7F84Cd4F03d18c6",
-  multicall2Address: "0x637490E68AA50Ea810688a52D7464E10c25A77c1",
+  multicall2Address: "0xe9cBc7b381aA17C7574671e445830E3b90648368",
   blockExplorerUrl: cantoBlockExplorerUrl,
   getExplorerAddressLink: getAddressLink(cantoBlockExplorerUrl),
   getExplorerTransactionLink: getTransactionLink(cantoBlockExplorerUrl),
@@ -97,16 +100,15 @@ export const AltheaTestnet: AltheaNetwork = {
   rpcUrl: "https://althea.zone:443",
   isTestChain: false,
   isLocalChain: false,
-  multicallAddress: "0x210b88d5Ad4BEbc8FAC4383cC7F84Cd4F03d18c6",
-  multicall2Address: "0x637490E68AA50Ea810688a52D7464E10c25A77c1",
-  blockExplorerUrl: cantoBlockExplorerUrl,
+  multicallAddress: "0x5785e0027a8c937627C01C9EB5F543bA42f8BB6b",
+  multicall2Address: "0xe9cBc7b381aA17C7574671e445830E3b90648368",
+  blockExplorerUrl: altheaBlockExplorerUrl,
   getExplorerAddressLink: getAddressLink(cantoBlockExplorerUrl),
   getExplorerTransactionLink: getTransactionLink(cantoBlockExplorerUrl),
-  //canto specific
-  //coreContracts: CORE_ADDRESSES.CantoMainnet,
-  cosmosBlockExplorerUrl: "https://www.mintscan.io/canto",
-  cosmosAPIEndpoint: "https://mainnode.plexnode.org:1317",
-  cosmosChainId: "althea_417834-2",
+  //coreContracts: CORE_ADDRESSES.AltheaMainnet,
+  cosmosBlockExplorerUrl: "https://www.mintscan.io/althea",
+  cosmosAPIEndpoint: "https://althea.api.chandrastation.com",
+  cosmosChainId: "althea_417834-3",
 };
 
 
@@ -189,7 +191,7 @@ export const OptimismTestnet: Network = {
  */
 
 //Will include all canto + testnets
-export const ALL_SUPPORTED_CANTO_NETWORKS = [CantoMainnet, CantoTestnet];
+export const ALL_SUPPORTED_CANTO_NETWORKS = [CantoMainnet, CantoTestnet,AltheaTestnet];
 //For bridging eth networks + testnests
 export const ALL_SUPPORTED_ETH_NETWORKS = [ETHMainnet, GravityTestnet];
 //For all network queries (chainId, rpc, blockexplorer, etc.)
@@ -202,6 +204,7 @@ export const ALL_SUPPORTED_NETWORKS = [
   GoerliTestnet,
   AvalancheTestnet,
   OptimismTestnet,
+  AltheaTestnet,
 ];
 
 /**

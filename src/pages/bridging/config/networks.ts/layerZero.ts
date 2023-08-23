@@ -8,6 +8,7 @@ import {
   OptimismTestnet,
   CantoMainnet,
   ETHMainnet,
+  AltheaTestnet,
 } from "global/config/networks";
 import { CANTO_OFT } from "../tokens.ts/layerZeroTokens";
 enum TestnetLZNetworks {
@@ -24,7 +25,7 @@ type LZTestNetworkData = {
 
 const LAYER_ZERO_TEST_NETWORKS: LZTestNetworkData = {
   [TestnetLZNetworks.CANTO_TEST]: {
-    ...CantoTestnet,
+    ...AltheaTestnet,
     lzChainId: 10159,
     tokens: {
       toCanto: [],

@@ -13,9 +13,9 @@ export function getBridgeExtraDetails1(
       {`by completing bridge ${
         bridgeIn ? "in" : "out"
       }, you are transferring your assets from ${
-        bridgeIn ? `${nonCantoNetwork.name}` : "canto"
+        bridgeIn ? `${nonCantoNetwork.name}` : "althea"
       } (${from}) to ${
-        bridgeIn ? "canto" : `${nonCantoNetwork.name}`
+        bridgeIn ? "althea" : `${nonCantoNetwork.name}`
       } (${to}).`}
     </Text>
   );
@@ -33,9 +33,9 @@ export function getBridgeExtraDetails(
         <>
           {`by completing bridge ${
             bridgeIn ? "in" : "out"
-          }, you are transferring your assets from your canto native address (${from}) to your ${
+          }, you are transferring your assets from your althea native address (${from}) to your ${
             bridgeIn
-              ? "canto EVM address (" + to + ")"
+              ? "althea EVM address (" + to + ")"
               : "address on the " + to + " network"
           }. Read more about this `}
           <a
@@ -62,8 +62,8 @@ export function getBridgeExtraDetails(
         `by bridging ${
           bridgeIn ? "in" : "out"
         }, you are transferring your assets from your ${
-          bridgeIn ? "ethereum " : "canto "
-        } EVM address (${from}) to your canto native address (${to}) ${
+          bridgeIn ? "ethereum " : "althea "
+        } EVM address (${from}) to your althea native address (${to}) ${
           bridgeIn ? "through gravity bridge." : "."
         }`
       )}

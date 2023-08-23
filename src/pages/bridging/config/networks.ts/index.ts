@@ -1,4 +1,5 @@
 import {
+  AltheaTestnet,
   AvalancheTestnet,
   CantoMainnet,
   CantoTestnet,
@@ -32,12 +33,12 @@ const CANTO_MAIN_BRIDGE_NETWORK: BridgingNetwork = {
   [BridgingMethods.LAYER_ZERO]: LAYER_ZERO_MAIN_NETWORKS.CANTO_MAIN,
 };
 const CANTO_TEST_BRIDGE_NETWORK: BridgingNetwork = {
-  id: "canto-test",
-  name: CantoTestnet.name,
-  icon: CantoTestnet.icon,
+  id: "althea-test",
+  name: AltheaTestnet.name,
+  icon: AltheaTestnet.icon,
   isCanto: true,
   isEVM: true,
-  evmChainId: CantoTestnet.chainId,
+  evmChainId: AltheaTestnet.chainId,
   supportedBridgeInMethods: [],
   supportedBridgeOutMethods: [],
   [BridgingMethods.LAYER_ZERO]: LAYER_ZERO_TEST_NETWORKS.CANTO_TEST,

@@ -4,7 +4,7 @@ import loadingIcon from "assets/loading.gif";
 const Loading = () => {
   return (
     <Styled>
-      <img src={loadingIcon} alt="loading" height={80} />
+     
     </Styled>
   );
 };

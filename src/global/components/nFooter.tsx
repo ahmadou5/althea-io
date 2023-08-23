@@ -9,21 +9,13 @@ const Footer = () => {
   return (
     <Styled>
       <div className="links">
-        <a href="https://canto.mirror.xyz/" target="_blank" rel="noreferrer">
-          <Text type="text">about canto</Text>
+        <a href="https://Althea.org/" target="_blank" rel="noreferrer">
+          <Text type="text">Althea</Text>
         </a>
-        <a href="https://docs.canto.io/" target="_blank" rel="noreferrer">
-          <Text type="text">docs</Text>
+        <a href="https://d/" target="_blank" rel="noreferrer">
+          <Text type="text">Documentation</Text>
         </a>
-        <a href="https://canto.canny.io/" target="_blank" rel="noreferrer">
-          <Text type="text">report bug</Text>
-        </a>
-        <a href="https://canto.build/">
-          <Text type="text">canto commons</Text>
-        </a>
-        <a href="/changelog">
-          <Text type="text">changelog</Text>
-        </a>
+        
       </div>
 
       <div className="links">
@@ -41,7 +33,7 @@ const Footer = () => {
             alt="github"
             height={40}
             onClick={() => {
-              window.open("https://github.com/Canto-Network");
+              window.open("https://github.com/");
             }}
           />
           <ImageButton
@@ -49,7 +41,7 @@ const Footer = () => {
             alt="twitter"
             height={40}
             onClick={() => {
-              window.open("https://twitter.com/CantoPublic");
+              window.open("https://twitter.com/Althea");
             }}
           />
         </div>
@@ -66,7 +58,7 @@ const Styled = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   z-index: 2;
   .links {
     display: flex;

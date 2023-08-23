@@ -63,6 +63,9 @@ interface FullTokenList {
   };
 }
 export const TOKENS: FullTokenList = {
+  altheaTestnet: {
+    
+  },
   cantoTestnet: {
     CANTO: {
       symbol: "CANTO",

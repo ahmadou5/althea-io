@@ -1,4 +1,4 @@
-import { CantoMainnet, CantoTestnet } from "global/config/networks";
+import { AltheaTestnet, CantoMainnet, CantoTestnet } from "global/config/networks";
 import { BigNumber } from "ethers";
 import { parseUnits } from "ethers/lib/utils";
 
@@ -22,7 +22,7 @@ export const PAGES = {
         minBalance: parseUnits("2.5", 18),
         description: "bridge",
         warningMessage:
-          "you may not have enough CANTO to complete all bridging actions, we recommend at least 2.5 CANTO to avoid transaction failure",
+          "you may not have enough Althea token to complete all bridging actions, we recommend at least 2.5 ALTHEA to avoid transaction failure",
       },
     ],
     subPages: {
@@ -30,7 +30,7 @@ export const PAGES = {
         name: "walkthrough",
         link: "/bridge/walkthrough",
         pageTitle: "guide",
-        networks: [CantoMainnet.chainId, CantoTestnet.chainId, 1],
+        networks: [CantoMainnet.chainId, CantoTestnet.chainId, 1 ,AltheaTestnet.chainId],
         showInMenu: false,
       },
     },
@@ -39,7 +39,7 @@ export const PAGES = {
     name: "governance",
     link: "/governance",
     pageTitle: "governance",
-    networks: [CantoMainnet.chainId, CantoTestnet.chainId],
+    networks: [CantoMainnet.chainId, CantoTestnet.chainId,AltheaTestnet.chainId],
     showInMenu: true,
     subpages: {
       proposal: {
@@ -49,7 +49,7 @@ export const PAGES = {
         pageTitleFunction: (link: string) => {
           return "proposal #" + link.split("/")[3];
         },
-        networks: [CantoMainnet.chainId, CantoTestnet.chainId],
+        networks: [CantoMainnet.chainId, CantoTestnet.chainId,AltheaTestnet.chainId],
         showInMenu: false,
       },
     },
@@ -58,14 +58,14 @@ export const PAGES = {
     name: "lending",
     link: "/lending",
     pageTitle: "lending",
-    networks: [CantoMainnet.chainId, CantoTestnet.chainId],
+    networks: [CantoMainnet.chainId, CantoTestnet.chainId,AltheaTestnet.chainId],
     showInMenu: true,
   },
   lp: {
     name: "lp interface",
     link: "/lp",
     pageTitle: "lp interface",
-    networks: [CantoMainnet.chainId, CantoTestnet.chainId],
+    networks: [CantoMainnet.chainId, CantoTestnet.chainId,AltheaTestnet.chainId],
     showInMenu: true,
   },
   changelog: {
@@ -80,14 +80,14 @@ export const PAGES = {
     name: "staking",
     link: "/staking",
     pageTitle: "staking",
-    networks: [CantoMainnet.chainId, CantoTestnet.chainId],
+    networks: [CantoMainnet.chainId, CantoTestnet.chainId,AltheaTestnet.chainId],
     showInMenu: true,
     balanceLimits: [
       {
         minBalance: parseUnits("3.5", 18),
         description: "claim rewards",
         warningMessage:
-          "you may not have enough CANTO to claim rewards, we recommend at least 3.5 CANTO to avoid transaction failure",
+          "you may not have enough ALTHEA to claim rewards, we recommend at least 3.5 ALTHEA to avoid transaction failure",
       },
     ],
   },

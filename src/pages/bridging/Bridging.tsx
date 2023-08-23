@@ -172,8 +172,8 @@ const Bridging = () => {
                 ) : !canPubKey ? (
                   <PubKeyStyled>
                     <NotConnected
-                      title="you don’t have enough Canto or ETH to generate a public key"
-                      subtext="In order to generate a public key, you must have at least 0.5 CANTO or 0.01 ETH on mainnet"
+                      title="you don’t have enough Althea or ETH to generate a public key"
+                      subtext="In order to generate a public key, you must have at least 0.5 Althea or 0.01 ETH on mainnet"
                       buttonText="Home"
                       onClick={() => {
                         navigate("/");
@@ -250,7 +250,7 @@ const Styled = styled.div`
     right: 2rem;
     height: 40px;
     width: 40px;
-    background-color: var(--primary-color);
+    background-color: white;
     border-radius: 50%;
     display: grid;
     place-items: center;

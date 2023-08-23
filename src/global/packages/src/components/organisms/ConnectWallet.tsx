@@ -46,7 +46,7 @@ const ConnectWallet = ({ balance, currency, onClick, currencyIcon }: Props) => {
                     gap: "10px",
                   }}
                 >
-                  {currency != "CANTO" && currency != "ETH" ? currency : null}
+                  {currency != "ALTHEA" && currency != "ETH" ? currency : null}
                 </span>
                 <div
                   className="hide-on-mobile"
@@ -84,7 +84,7 @@ const ConnectWallet = ({ balance, currency, onClick, currencyIcon }: Props) => {
             height: "32px",
           }}
         >
-          <Text type="text" size="text4" bold>
+          <Text type="text" size="text3" bold>
             connect<span className="hide-on-mobile">&nbsp;wallet</span>
           </Text>
         </OutlinedButton>

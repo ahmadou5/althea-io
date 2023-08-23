@@ -24,7 +24,7 @@ export interface NetworkProps {
 
 export const useNetworkInfo = create<NetworkProps>()(
   devtools((set, get) => ({
-    chainId: undefined,
+    chainId: 417834,
     setChainId: (chainId) => set({ chainId: chainId }),
     account: undefined,
     signer: undefined,

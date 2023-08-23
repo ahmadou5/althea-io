@@ -95,6 +95,7 @@ const MenuBar = ({ currentPage, pageList }: BurgerMenuProps) => {
           </div>
         </div>
         <footer>
+        {/*
           <OutlinedButton
             filled
             weight="bold"
@@ -105,7 +106,7 @@ const MenuBar = ({ currentPage, pageList }: BurgerMenuProps) => {
           >
             import tokens
           </OutlinedButton>
-          {/* <OutlinedButton
+          { <OutlinedButton
           onClick={() => {
             addCTokens(chainId);
           }}
@@ -120,14 +121,12 @@ const MenuBar = ({ currentPage, pageList }: BurgerMenuProps) => {
               addCantoToKeplr();
             }}
           >
-            add to keplr
+            add to Metamask
           </OutlinedButton>
           <div className="links">
-            <a href="https://canto.canny.io/" target="_blank" rel="noreferrer">
-              report a bug
-            </a>
-            <a href="https://docs.canto.io/" target="_blank" rel="noreferrer">
-              docs
+            
+            <a href="https://docs." target="_blank" rel="noreferrer">
+              Documentation
             </a>
           </div>
         </footer>
