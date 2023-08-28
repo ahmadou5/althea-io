@@ -44,6 +44,12 @@ export interface CantoNetwork extends Network {
 }
 
 export interface AltheaNetwork extends Network {
+  coreContracts: {
+    Router: string;
+    Comptroller: string;
+    Reservoir: string;
+    WCANTO: string;
+  };
   
   cosmosBlockExplorerUrl: string;
   cosmosAPIEndpoint: string;
@@ -105,7 +111,7 @@ export const AltheaTestnet: AltheaNetwork = {
   blockExplorerUrl: altheaBlockExplorerUrl,
   getExplorerAddressLink: getAddressLink(cantoBlockExplorerUrl),
   getExplorerTransactionLink: getTransactionLink(cantoBlockExplorerUrl),
-  //coreContracts: CORE_ADDRESSES.AltheaMainnet,
+  coreContracts: CORE_ADDRESSES.CantoTestnet,
   cosmosBlockExplorerUrl: "https://www.mintscan.io/althea",
   cosmosAPIEndpoint: "https://althea.api.chandrastation.com",
   cosmosChainId: "althea_417834-3",
