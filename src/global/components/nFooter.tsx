@@ -6,6 +6,11 @@ import { Text } from "global/packages/src";
 import ImageButton from "./ImageButton";
 
 const Footer = () => {
+  const img =
+    {
+      name: 'twitter' , src: './twitter.svg'
+    }
+  
   return (
     <Styled>
       <div className="links">
@@ -21,7 +26,7 @@ const Footer = () => {
       <div className="links">
         <div className="icon-links">
           <ImageButton
-            src={discord}
+            src={img.src}
             alt="discord"
             height={40}
             onClick={() => {

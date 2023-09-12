@@ -56,12 +56,12 @@ const PrimaryButton = styled.button<Props>`
 
 const OutlinedButton = styled(PrimaryButton)<Props>`
   /* background-color: var(--pitch-black-color); */
-  background-color: #0066FF;
-  color: wheat ;
+  background-color: #ffffff;
+  color: #0066FF ;
   border: 1px solid var(--primary-color);
 
   &:hover {
-    background-color: #0055FF;
+    background-color: #ffffff;
     color: black;
     /* background: rgba(6, 252, 153, 0.1); */
     cursor: pointer;

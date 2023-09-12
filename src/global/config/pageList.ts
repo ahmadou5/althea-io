@@ -117,7 +117,6 @@ export const pageList: PageObject[] = [
     networks: PAGES.bridge.networks,
     showInMenu: PAGES.bridge.showInMenu,
     balanceLimits: PAGES.bridge.balanceLimits,
-    subpages: [PAGES.bridge.subPages.walkthrough],
   },
   {
     name: PAGES.staking.name,

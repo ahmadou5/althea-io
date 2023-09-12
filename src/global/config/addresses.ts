@@ -88,7 +88,7 @@ export const CORE_ADDRESSES = {
     Router: "",
     Comptroller: "",
     reservoir: "",
-    WALTHEA: ""
+    WALTHEA: "0xC6e21126697D8666867832f7cD4337A2CE3b2080"
   },
   ETHMainnet: {
     GravityBridge: "0xa4108aA1Ec4967F8b52220a4f7e94A8201F2D906",

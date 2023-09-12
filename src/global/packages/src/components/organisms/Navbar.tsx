@@ -39,7 +39,7 @@ export const NavBar = (props: Props) => {
 
   return (
     <Container>
-      <Alert />
+      
       <nav className={onScroll ? "scroll" : ""}>
         <div className="menu">
           <MenuBar currentPage={currentPage} pageList={pageList} />

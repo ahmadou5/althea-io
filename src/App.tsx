@@ -18,7 +18,8 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 5rem);
-  background-color: #111;
+  background: rgb(2,0,36);
+  background: linear-gradient(19deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(230,230,232,1) 13%, rgba(194,194,235,1) 48%, rgba(145,157,231,1) 81%, rgba(194,194,219,1) 97%);
 `;
 //Lazy loading pages. will load in the required pages
 

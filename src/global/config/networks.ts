@@ -129,28 +129,27 @@ export const ETHMainnet: ETHBridgeNetwork = {
 
 //TEST CHAINS
 export const CantoTestnet: CantoNetwork = {
-  name: "Canto Testnet",
-  chainName: "Canto Testnet",
+  name: "Althea",
+  chainName: "Althea",
   nativeCurrency: {
-    name: "Canto",
-    symbol: "CANTO",
+    name: "Althea",
+    symbol: "Althea",
     decimals: 18,
   },
   icon: cantoIcon,
-  chainId: 7701,
-  rpcUrl: "https://canto-testnet.plexnode.wtf",
-  isTestChain: true,
+  chainId: 417834,
+  rpcUrl: "https://althea.zone:443",
+  isTestChain: false,
   isLocalChain: false,
-  multicallAddress: "0xe536cF7B00069894da25faC787d7aD9D211a2C1A",
-  multicall2Address: "0x0e356B86FA2aE1bEB93174C18AD373207a40F2A3",
-  blockExplorerUrl: cantoTestBlockExplorerUrl,
-  getExplorerAddressLink: getAddressLink(cantoTestBlockExplorerUrl),
-  getExplorerTransactionLink: getTransactionLink(cantoTestBlockExplorerUrl),
-  //canto specific
+  multicallAddress: "0x5785e0027a8c937627C01C9EB5F543bA42f8BB6b",
+  multicall2Address: "0xe9cBc7b381aA17C7574671e445830E3b90648368",
+  blockExplorerUrl: altheaBlockExplorerUrl,
+  getExplorerAddressLink: getAddressLink(cantoBlockExplorerUrl),
+  getExplorerTransactionLink: getTransactionLink(cantoBlockExplorerUrl),
   coreContracts: CORE_ADDRESSES.CantoTestnet,
-  cosmosBlockExplorerUrl: emptyBlockExplorerLink,
-  cosmosAPIEndpoint: "https://api-testnet.plexnode.wtf",
-  cosmosChainId: "canto_7701-1",
+  cosmosBlockExplorerUrl: "https://www.mintscan.io/althea",
+  cosmosAPIEndpoint: "https://althea.api.chandrastation.com",
+  cosmosChainId: "althea_417834-3",
 };
 export const GravityTestnet: ETHBridgeNetwork = {
   ...Mainnet,

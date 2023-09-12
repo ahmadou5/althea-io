@@ -16,8 +16,12 @@ const Homepage = () => {
         link=""
       />
       <Styled>
+        <div className="left">
+          Welcome to Althea Layer one Interactive Blockchain User Interface Explore the althea Blockchain With us.
+          Bridge, Stake, and Provide Liquidity on Althea Blockchain Through Our Aggregator.
+        </div>
         <ul className="options" id="routes">
-          {pageList.map((page, idx) => {
+          {/**{pageList.map((page, idx) => {
             return page.showInMenu ? (
               <NavLink
                 to={page.link}
@@ -37,7 +41,7 @@ const Homepage = () => {
                 </Text>
               </NavLink>
             ) : null;
-          })}
+          })} **/}
         </ul>
         <div className="right">
         <Banner />
@@ -56,6 +60,14 @@ const Styled = styled.div`
   height: 100%;
   z-index: 0;
 
+  .left {
+    margin-buttom: auto ;
+    margin-top: 0px;
+    place-items: center;
+    margin-left: 33px;
+    margin-right: 33px;
+    color: #0066FF;
+  }
   .right {
     display: grid;
     place-items: center;
@@ -73,21 +85,14 @@ const Styled = styled.div`
     position: absolute;
     height: 100vh;
     width: 100vw;
-    background-color: black;
-    background: url(${bg}),
-      linear-gradient(90deg, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 60%),
-      linear-gradient(180deg, #0066FF 0%, #0066FF 50%, rgba(0, 0, 0, 1) 100%);
-    background-position: 100%;
-    background-size: auto 100%;
-    top: 0;
-    background-repeat: no-repeat, repeat;
+    
 
     &::after {
       content: " ";
       position: absolute;
       height: 100vh;
       width: 100vw;
-      background: linear-gradient(
+      background: (
         90deg,
         #00000015,
         #000000b9,

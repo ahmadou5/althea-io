@@ -4,9 +4,9 @@
   --off-white-color: #efefef;
   //   --error-color: #fe4256;
 }
-@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:weight@800&display=swap');
 
 
 :root {
@@ -63,14 +63,9 @@ input[type="number"] {
 }
 
 .App {
-  background: repeating-linear-gradient(
-    0deg,
-    #d3d1d1 0%,
-    #e2dfdf 4px,
-    #ebe2e2 4px,
-    #141a18 0px
-  );
-  background-repeat: repeat-y;
+  background: white;
+  
+  
   display: flex;
   height: 100%;
   flex-direction: column;

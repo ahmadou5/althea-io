@@ -2,15 +2,15 @@
 
 //@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
 
 @font-face {
-  font-family: "Orbitron";
+  font-family: "Poppins";
   //src: local("ModeSeven"), url("./fonts/modeseven.ttf") format("truetype");
   font-weight: bold;
 }
 :root {
-  font-family: "Orbitron", monospace;
+  font-family: "Poppins";
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -22,7 +22,7 @@
   -webkit-text-size-adjust: 100%;
 }
 * {
-  font-family: "Orbitron", monospace;
+  font-family: "Poppins";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
