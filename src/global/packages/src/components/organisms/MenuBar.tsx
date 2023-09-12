@@ -81,13 +81,13 @@ const MenuBar = ({ currentPage, pageList }: BurgerMenuProps) => {
                       : currentPage == page.name && isHovering
                       ? "active-bar "
                       : ""
-                  }`}
+                  } font-['Poppins']`}
                   to={page.link}
                   key={page.name}
                   onClick={() => setIsOpen(false)}
                 >
-                  <Text size="text2" type="title" align="left" id={page.name}>
-                    {"0" + (idx + 1) + " " + page.name}
+                  <Text size="text2"  type="title" align="left" id={page.name}>
+                    {"" + (idx + 1) + " " + page.name}
                   </Text>
                 </Navlink>
               ) : null;
